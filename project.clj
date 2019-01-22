@@ -8,6 +8,9 @@
                  [ring-server "0.5.0"]
                  [reagent "0.8.1"]
                  [reagent-utils "0.3.2"]
+                 [re-frame "0.10.6"]
+                 [day8.re-frame/http-fx "0.1.4"]
+                 [secretary "1.2.3"]
                  [ring "1.7.1"]
                  [ring/ring-defaults "0.3.2"]
                  [hiccup "1.0.5"]
@@ -88,7 +91,7 @@
                                   [figwheel-sidecar "0.5.18"]
                                   [nrepl "0.5.3"]
                                   [pjstadig/humane-test-output "0.9.0"]
-                                  
+
  ]
 
                    :source-paths ["env/dev/clj"]
