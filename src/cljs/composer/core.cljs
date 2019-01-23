@@ -5,6 +5,7 @@
               [clerk.core :as clerk]
               [accountant.core :as accountant]
               [composer.events]
+              [composer.subs]
               [composer.views.index :as page-index]
               [composer.views.about :as page-about]))
 

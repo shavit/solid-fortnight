@@ -12,7 +12,6 @@
 (defn main-content
   []
   [:div
-
     [:hr]
     [playback/render]
     [:hr]

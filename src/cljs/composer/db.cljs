@@ -12,7 +12,9 @@
 ;; Default values
 
 (def default-db
-  {:settings {}})
+  {:settings {}
+    :panel-velocity {:value nil}
+    })
 
 ;; ------------------------------
 ;; localStorage

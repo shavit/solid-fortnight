@@ -3,3 +3,5 @@ Leiningen.gitignore
 *.log
 
 target
+
+.rebel_readline_history
