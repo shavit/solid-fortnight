@@ -5,3 +5,5 @@ Leiningen.gitignore
 target
 
 .rebel_readline_history
+
+CNAME
