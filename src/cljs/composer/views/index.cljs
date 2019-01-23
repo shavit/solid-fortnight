@@ -1,7 +1,8 @@
 (ns composer.views.index
   (:require [reagent.core :as reagent]
             [re-frame.core :refer [subscribe dispatch dispatch-sync]]
-            [composer.layout :refer [page-layout]]))
+            [composer.layout :refer [page-layout]]
+            [composer.views.dashboard.playback :as playback]))
 
 (defn on-click-key
   [event]
@@ -13,10 +14,7 @@
   [:div
 
     [:hr]
-    [:div {:class "buttons-play"}
-    [:button "Play"]
-    [:button "Pause"]
-    ]
+    [playback/render]
     [:hr]
     [:div {:class "buttons-keys"}
       [:button {:on-click on-click-key, :value :c} "C"]
@@ -27,7 +25,6 @@
       [:button {:on-click on-click-key, :value :a} "A"]
       [:button {:on-click on-click-key, :value :b} "B"]
     ]
-
   ])
 
 (defn render
